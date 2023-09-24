@@ -1,0 +1,79 @@
+#block{
+    Width:1412px;
+    Height:882px;
+  margin:50px;
+   border-radius:    45px;
+   background-color: #B0D8DA;
+display: flex;
+justify-content: flex-end;
+
+}
+.b_word h1 {
+    font-family: Plus Jakarta Sans;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 81px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #FFFFFF;
+    justify-content: flex-start;
+
+}
+.b_word p{
+    font-family: Plus Jakarta Sans;
+    font-size: 64px;
+    line-height: 81px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #FFFFFF;
+    font-weight: 400;
+
+}
+
+.language{
+   display: flex;
+   flex-direction: row;
+   align-self:flex-end ;
+}
+.icon{
+    margin-top: 23px;
+    margin-left: 10px;
+    Width:13px;
+Height:6.5px;
+Border:1px;
+}
+.word{
+    margin-left: 80px; 
+}
+.word p{
+    color:#ABABAB;
+}
+.registr{
+    display: flex;
+    flex-direction: column;
+    width: 860px;
+height: 882px;
+background: #ffffff;
+border-radius: 45px;
+}
+.img1{
+    position: absolute;
+    height: 400px;
+    width: 400px;
+    margin-right: 800px;
+    margin-top:250px
+}
+.div_form{
+    color:#ABABAB;
+   margin-left: 80px;
+}
+input{
+    width: 200px;
+}
+#button{
+    width: 200px;
+    height: 30px;
+    border-radius: 45px;
+    color:#ffffff;
+    background-color: rgb(108, 214, 214);
+}
