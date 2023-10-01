@@ -1,6 +1,6 @@
 #block{
     Width:1412px;
-    Height:882px;
+    Height:682px;
   margin:30px;
   padding-left: 30px;
    border-radius:    45px;
@@ -16,7 +16,7 @@ justify-content: flex-end;
 .b_word h1 {
     font-family: Plus Jakarta Sans;
     font-size: 64px;
-    font-weight: 700;
+    font-weight: 700px;
     line-height: 81px;
     letter-spacing: 0em;
 
@@ -34,7 +34,7 @@ justify-content: flex-end;
     letter-spacing: 0em;
     text-align: left;
     color: #FFFFFF;
-    font-weight: 400;
+    font-weight: 400px;
 
 }
 
@@ -60,7 +60,7 @@ Border:1px;
     display: flex;
     flex-direction: column;
     width: 860px;
-height: 882px;
+height: 682px;
 background: #ffffff;
 border-radius: 45px;
 }
@@ -75,9 +75,7 @@ border-radius: 45px;
     color:#ABABAB;
    margin-left: 80px;
 }
-#f_name#f_soyad{
-    width: 500px;
-}
+
 input{
   
 }
@@ -87,4 +85,55 @@ input{
     border-radius: 45px;
     color:#ffffff;
     background-color: rgb(108, 214, 214);
+}
+@media  (max-width:576px) {
+    #block{
+       width: 400px;
+      margin:5px;
+      padding-left:10px;
+       border-radius:    45px;
+       background-color: #488a0a;
+       box-shadow: 10px 5px 5px rgb(63, 113, 99);
+    display: flex;
+    flex-direction: column;
+    
+    }  
+    .b_word h1 {
+        font-size: 50px;
+
+        line-height: 3px;
+    
+    }
+    .registr{
+        display: flex;
+        flex-direction: column;
+        width: 400px;
+    height: 482px;
+    background: #ffffff;
+    border-radius: 45px;
+    }
+    .b_word p{
+   
+        font-size: 20px;
+
+            line-height: 20px;
+     
+        
+        }
+    
+
+.word h1{
+    font-size: 15px;
+}
+.word p{
+    font-size: 15px;
+}
+.img1{
+   
+    height: 150px;
+    width: 150px;
+    margin-left: 250px;
+    margin-bottom:450px;
+}
+
 }

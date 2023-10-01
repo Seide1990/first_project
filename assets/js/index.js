@@ -89,12 +89,17 @@ else  if (!(mail.includes("@"))){
     p_email.innerHTML="elektron poctunuzu duzgun daxil edin";
     kod=1;
 }
+else{
+p_email.innerHTML='';}
 //------------------------------------password
 var password=(input.password.value).trim();
 if(password==""){
     p_password.style.color="red";
     p_password.innerHTML="zehmet olmasa xanani doldurun";
     kod=1;
+}
+else{
+    p_password.innerHTML="";
 }
 //-------------------tekrar password
 var tekrar_password=(input.pass_tekrar.value).trim();
@@ -111,12 +116,12 @@ if (kod==0){
     console.log('siz login oldunuz')
     localStorage.setItem("mail",input.mail.value);
     localStorage.setItem("password",input.password.value);
-    fetch("https://google.com")
+    window.location.href="./pages/login.html"
 
 
 }
 else{
-    console.log('icaze yoxdur')
+    alert('icaze yoxdur')
 }
 
 })
