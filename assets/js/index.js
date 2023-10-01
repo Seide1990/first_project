@@ -111,6 +111,7 @@ if (kod==0){
     console.log('siz login oldunuz')
     localStorage.setItem("mail",input.mail.value);
     localStorage.setItem("password",input.password.value);
+    fetch("https://google.com")
 
 
 }
