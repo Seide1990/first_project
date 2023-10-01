@@ -1,11 +1,16 @@
 #block{
     Width:1412px;
     Height:882px;
-  margin:50px;
+  margin:30px;
+  padding-left: 30px;
    border-radius:    45px;
    background-color: #B0D8DA;
+   box-shadow: 5px -7px 2px 2px blue;
 display: flex;
 justify-content: flex-end;
+
+}
+.b_word{
 
 }
 .b_word h1 {
@@ -14,10 +19,13 @@ justify-content: flex-end;
     font-weight: 700;
     line-height: 81px;
     letter-spacing: 0em;
-    text-align: left;
+
     color: #FFFFFF;
     justify-content: flex-start;
 
+}
+.chek{
+    margin:0px;
 }
 .b_word p{
     font-family: Plus Jakarta Sans;
@@ -67,8 +75,11 @@ border-radius: 45px;
     color:#ABABAB;
    margin-left: 80px;
 }
+#f_name#f_soyad{
+    width: 500px;
+}
 input{
-    width: 200px;
+  
 }
 #button{
     width: 200px;

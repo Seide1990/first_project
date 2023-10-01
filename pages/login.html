@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles/reset.css">
+    <link rel="stylesheet" href="../styles/login.css">
+    <script defer src="../assets/js/login.js"> </script>
+</head>
+<body>
+    <div id="block">
+        <div class="b_word"> 
+            <h1 >Eecamp Bank</h1>
+            <p >Xoş gəlmisiz!</p>
+        </div>
+    <img class="img1"  src="..\assets\components\Abstraction.png">
+       <div class="registr">
+        <div class="language">
+        <p >Azərbaycan dili</p>
+        <img class="icon"src="..\assets\components\🦆 icon _nav arrow down_.png">
+    </div>
+        <div class="word">
+        <h1 class="h1">Daxil olmag üçün e-mail və şifrəni daxil edin!</h1>
+        <p class="p">Qeydiyyatdan keçdikdən sonra, siz daxil ola bilərsiz!</p>
+    </div>
+        <div class="div_form">
+            <form id="form" action=".\pages\login.html" method="get">
+            <label for="f_email">E-mail ünvanınız</label>
+            <br />
+            <br />
+            <input type="email" id="f_email" name="mail" />
+           <br />
+           <br />
+            <label for="f_password">Şifrə</label>
+            <br /> 
+            <br />        
+            <input type="Password" id="f_password" name="password" />
+            <p id="error"></p>
+            <br />
+
+            <input class="chek" type="checkbox"> 
+            <label>Məni yadda saxla.</label>   
+           
+            <br />
+            <br />
+            <button  type="submit" id="button">QEYDIYYAT</button>
+           
+        </form>
+        </div>
+       </div>
+    </div>
+    
+</body>
+</html>

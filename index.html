@@ -6,7 +6,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/login.css">
-    <script defer src="./index.js"> </script>
+    <script defer src="./assets/js/index.js"> </script>
 </head>
 <body>
     <div id="block">
@@ -25,34 +25,39 @@
         <p class="p">Qeydiyyatdan keçdikdən sonra, siz daxil ola bilərsiz!</p>
     </div>
         <div class="div_form">
-            <form>
+            <form id="form" action=".\pages\login.html" method="get">
             <label for="f_name">Ad</label>
             <br />
-            <input type="text" id="f_name" />
+            <input type="text" id="f_name" name="name" />
             <p id="p_name"></p>
-            <br />
+           
             <label for="f_soyad">Soyad</label>
             <br />
-            <input type="text" id="f_soyad" />
-            <p id="p_soyad"></p>
-            <br />
+            <input type="text" id="f_soyad" name="soyad"/>
+            <p id="p_surname"></p>
+            
             <label for="f_email">E-mail ünvanınız</label>
             <br />
-            <input type="email" id="f_email" />
+            <input type="email" id="f_email" name="mail" />
             <p id="p_email"></p>
-            <br />
+           
             <label for="f_password">Şifrə</label>
             <br />         
-            <input type="Password" id="f_password" />
+            <input type="Password" id="f_password" name="password" />
             <p id="p_password"></p>
-            <br />
+            
             <label for="f_password_t">Şifre təkrar</label>
             <br />         
-            <input type="Password" id="f_password_t" />
+            <input type="Password" id="f_password_t" name="pass_tekrar" />
             <p id="p_password_t"></p>
-            <br />      
-            <button id="button">QEYDIYYAT</button>
+            <br />  
+            <input class="chek" type="checkbox"> 
+            <label>Mən yazılan bütün qaydalarla razıyam.</label>   
+           
             <br />
+            <br />
+            <button  type="submit" id="button">QEYDIYYAT</button>
+           
         </form>
         </div>
        </div>
