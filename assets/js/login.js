@@ -1,5 +1,6 @@
 var form=document.querySelector("#form");
 var error=document.querySelector("#error");
+var p_button=document.querySelector("#p_button")
 form.addEventListener("submit",function(e){
     e.preventDefault();
     const input=e.target;
@@ -9,7 +10,8 @@ form.addEventListener("submit",function(e){
     error.innerHTML="";
     if(mail==localStorage.getItem("mail",input.mail.value) && password==localStorage.getItem("password",input.password.value)){
         error.innerHTML="";
-        alert("siz login oldunuz")
+        p_button.style.color="green";
+        p_button.innerHTML="siz login oldunuz"
      
     }
     else {

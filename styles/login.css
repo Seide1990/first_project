@@ -88,8 +88,9 @@ input{
 }
 @media  (max-width:576px) {
     #block{
-       width: 400px;
+       width: 450px;
       margin:5px;
+      height: 700px;
       padding-left:10px;
        border-radius:    45px;
        background-color: #488a0a;
@@ -100,22 +101,22 @@ input{
     }  
     .b_word h1 {
         font-size: 50px;
-
+text-align: c;
         line-height: 3px;
     
     }
     .registr{
         display: flex;
         flex-direction: column;
-        width: 400px;
-    height: 482px;
+        width: 450px;
+    height: 600px;
     background: #ffffff;
     border-radius: 45px;
     }
     .b_word p{
    
         font-size: 20px;
-
+text-align: center;
             line-height: 20px;
      
         
@@ -130,10 +131,10 @@ input{
 }
 .img1{
    
-    height: 150px;
-    width: 150px;
-    margin-left: 250px;
-    margin-bottom:450px;
+    height: 100px;
+    width: 100px;
+    margin-left: 310px;
+    margin-bottom:590px;
 }
 
 }

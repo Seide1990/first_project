@@ -3,7 +3,8 @@ var p_name=document.querySelector("#p_name");
 var p_surname=document.querySelector("#p_surname");
 var p_email=document.querySelector("#p_email");
 var p_password=document.querySelector("#p_password");
-var p_password_t=document.querySelector("#p_password_t")
+var p_password_t=document.querySelector("#p_password_t");
+var button=document.querySelector("#button")
 
 form.addEventListener("submit",function(e){
 e.preventDefault();
@@ -16,9 +17,8 @@ var array1=[]
 var min=3;
 var max=10;
 var name=(input.name.value).trim();
-console.log(name)
     array1=name.split("");
-    console.log(array1)
+    console.log(array1);
     if(name==""){
         p_name.style.color="red";
         p_name.innerHTML="zehmet olmasa xanani doldurun";
@@ -29,7 +29,6 @@ console.log(name)
         for(i of array1){
          
             if (array.includes(i)){
-                console.log(i)
                 kod=1;
                 p_name.style.color="red";
           p_name.innerHTML="adinizi daxil etdikde reqemden istifade etmeyin";
@@ -98,6 +97,10 @@ if(password==""){
     p_password.innerHTML="zehmet olmasa xanani doldurun";
     kod=1;
 }
+else if (password.length<=8){
+    p_password.style.color="red";
+    p_password.innerHTML="sifreniz minimum 8 simvol olmalidir";
+kod=1;}
 else{
     p_password.innerHTML="";
 }
@@ -113,7 +116,7 @@ else{
     p_password_t.innerHTML="";
 }
 if (kod==0){
-    console.log('siz login oldunuz')
+    button.style.color="green";
     localStorage.setItem("mail",input.mail.value);
     localStorage.setItem("password",input.password.value);
     window.location.href="./pages/login.html"
@@ -121,7 +124,7 @@ if (kod==0){
 
 }
 else{
-    alert('icaze yoxdur')
+    button.style.color="red";
 }
 
 })
